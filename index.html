@@ -35,7 +35,12 @@
 </head>
 <body>
   <h2>🦖 Tap “View in your space” to see the dinosaur in AR</h2>
-
+  <!-- Narration audio -->
+  <audio id="narration" src="https://rozyar005.github.io/dinosaur-ar/Dinasours.m4a"></audio>
+  <br>
+  <button onclick="document.getElementById('narration').play()">🔊 Play Narration</button>
+  <button onclick="document.getElementById('narration').pause()">⏸️ Pause</button>
+  
   <!-- Your AR 3D model -->
   <model-viewer 
     src="https://rozyar005.github.io/dinosaur-ar/pbr_velociraptor_animated.glb"
@@ -47,10 +52,6 @@
     exposure="1">
   </model-viewer>
 
-  <!-- Narration audio -->
-  <audio id="narration" src="https://rozyar005.github.io/dinosaur-ar/Dinasours.m4a"></audio>
-  <br>
-  <button onclick="document.getElementById('narration').play()">🔊 Play Narration</button>
-  <button onclick="document.getElementById('narration').pause()">⏸️ Pause</button>
+
 </body>
 </html>
